@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">个税计算器</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+
+
+    <string name="content_main_hint1">填入个人月收入</string>
+    <string name="content_main_hint2">公积金缴费基数</string>
+    <string name="content_main_hint3">社保缴费基数</string>
+    <string name="content_main_btn_calculate">计算</string>
+    <string name="content_main_note1">注意：计税规则参考自《中华人民共和国个人所得税法》、上海市公积金管理中心、上海社会保险网和上海市人力资源和社会保障网</string>
+    <string name="content_main_note2">网址：http://www.gov.cn/jrzg/2011-07/01/content_1897224.htm、http://www.shgjj.com/html/2017jstzzcjx/96360.html、http://www.12333sh.gov.cn/201412333/xxgk/flfg/szfgz/szfgz/201707/t20170706_1255786.shtml</string>
+
+    <string name="activity_result_label">计算结果</string>
+</resources>

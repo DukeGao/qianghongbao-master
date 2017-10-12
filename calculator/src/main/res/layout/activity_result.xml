@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_result"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.duke.calculator.Result">
+
+    <EditText
+        android:id="@+id/activity_result_et_money"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/activity_result_tv_money"
+        android:gravity="right"
+         />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/activity_result_tv_money"
+        android:layout_toEndOf="@+id/activity_result_et_money"
+        android:text="元" />
+
+
+    <EditText
+        android:id="@+id/activity_result_et2"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/activity_result_tv_social_security_note"
+        android:layout_alignParentStart="true"
+        android:gravity="right"
+        android:maxLength="12" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/activity_result_tv_social_security_note"
+        android:layout_toEndOf="@+id/activity_result_et2"
+        android:text="元"
+        android:id="@+id/textView5" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/activity_result_tv_fund_note"
+        android:layout_toEndOf="@+id/activity_result_et1"
+        android:text="元" />
+
+    <TextView
+        android:id="@+id/activity_result_tv_money"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/activity_result_tv_background"
+        android:maxLength="12"
+        android:text="个人税后总收入："
+        android:textSize="@dimen/activity_result_text_size"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:id="@+id/activity_result_tv_social_security_note"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/activity_result_tv_background"
+        android:text="社保缴费情况："
+        android:textSize="@dimen/activity_result_text_size"
+        android:layout_below="@+id/activity_result_et1"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:id="@+id/activity_result_tv_fund_note"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/activity_result_tv_background"
+        android:text="公积金缴费情况："
+        android:textSize="@dimen/activity_result_text_size"
+        android:layout_below="@+id/activity_result_et_money"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:id="@+id/activity_result_et1"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:gravity="right"
+        android:maxLength="12"
+        android:layout_below="@+id/activity_result_tv_fund_note" />
+
+    <TextView
+        android:id="@+id/activity_result_tv_tex_note"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/activity_result_tv_background"
+        android:text="个人所得税缴费情况："
+        android:textSize="@dimen/activity_result_text_size"
+        android:layout_below="@+id/activity_result_et2"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="元"
+        android:layout_below="@+id/activity_result_tv_tex_note"
+        android:layout_toEndOf="@+id/activity_result_tv_tax" />
+
+    <EditText
+        android:id="@+id/activity_result_tv_tax"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:gravity="right"
+        android:maxLength="12"
+        android:layout_below="@+id/activity_result_tv_tex_note"
+        android:layout_alignParentStart="true"
+        />
+
+
+</RelativeLayout>

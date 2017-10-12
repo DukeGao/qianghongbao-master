@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.duke.calculator.MainActivity"
+    tools:showIn="@layout/app_bar_main">
+
+    <EditText
+        android:id="@+id/content_main_et_money"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/content_main_tv_money"
+        android:gravity="right"
+        android:hint="填入个人月收入"
+        android:inputType="numberDecimal" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/content_main_tv_money"
+        android:layout_toEndOf="@+id/content_main_et_money"
+        android:text="元" />
+
+    <TextView
+        android:id="@+id/content_main_tv1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/content_main_et_money"
+        android:background="@color/content_main_tv_background"
+        android:text="公积金缴费基数："
+        android:textSize="@dimen/content_main_text_size" />
+
+    <EditText
+        android:id="@+id/content_main_et1"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/content_main_tv1"
+        android:gravity="right"
+        android:hint="公积金缴费基数"
+        android:inputType="numberDecimal"
+        android:maxLength="12" />
+
+    <TextView
+        android:id="@+id/content_main_tv2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/content_main_btn_change1"
+        android:background="@color/content_main_tv_background"
+        android:text="社保缴费基数："
+        android:textSize="@dimen/content_main_text_size" />
+
+    <Button
+        android:id="@+id/content_main_btn_change2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/content_main_tv2"
+        android:text="修改"
+        android:textSize="@dimen/content_main_text_size" />
+
+    <EditText
+        android:id="@+id/content_main_et2"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/content_main_btn_change2"
+        android:layout_alignParentStart="true"
+        android:gravity="right"
+        android:hint="社保缴费基数"
+        android:inputType="numberDecimal"
+        android:maxLength="12" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/content_main_tv2"
+        android:layout_toEndOf="@+id/content_main_et2"
+        android:text="元" />
+
+    <Button
+        android:id="@+id/content_main_btn_calculate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/content_main_et2"
+        android:background="@color/content_main_btn_calculate"
+        android:text="@string/content_main_btn_calculate"
+        android:textSize="@dimen/content_main_text_size" />
+
+    <TextView
+        android:id="@+id/content_main_note1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/content_main_btn_calculate"
+        android:layout_marginTop="30dp"
+        android:text="@string/content_main_note1" />
+
+    <Button
+        android:id="@+id/content_main_btn_change1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/content_main_tv1"
+        android:text="修改"
+        android:textSize="@dimen/content_main_text_size" />
+
+    <TextView
+        android:id="@+id/content_main_note2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/content_main_note1"
+        android:layout_marginTop="5dp"
+        android:text="@string/content_main_note2" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/content_main_tv1"
+        android:layout_toEndOf="@+id/content_main_et1"
+        android:text="元" />
+
+    <TextView
+        android:id="@+id/content_main_tv_money"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/content_main_tv_background"
+        android:maxLength="12"
+        android:text="个人月收入："
+        android:textSize="@dimen/content_main_text_size"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
+
+
+</RelativeLayout>

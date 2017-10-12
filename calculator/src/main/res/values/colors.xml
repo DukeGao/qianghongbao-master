@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="content_main_btn_calculate">#FF3030</color>
+    <color name="content_main_tv_background">#D1EEEE</color>
+    <color name="activity_result_btn_calculate">#FF3030</color>
+    <color name="activity_result_tv_background">#D1EEEE</color>
+
+
+</resources>
